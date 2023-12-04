@@ -5,10 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-}
-@import "header.css";
-
-    
+}   
 
 body{
     font-family: 'Nanum Gothic', sans-serif;
@@ -30,7 +27,7 @@ h1{
     font-family:'Vina Sans', sans-serif;
     font-size: 110px;
 }
-/* HEADER */
+/* HEADER alterar as cores e detalhes */
 
 .bg-home {
     position: relative;
@@ -41,12 +38,13 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: rgba(0, 0, 0, 0.226) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.226) 2px solid;
+    
     
 }
 
 .picture img {
-    height: 100px; 
+    height: 80px; 
     border-radius: 50%; 
 }
 
@@ -62,7 +60,7 @@ nav .header-items {
     padding: 5px;
     font-size: 18px;
     background-color: transparent;
-    border: rgba(0, 0, 0, 0.851) 2px solid;
+    border: rgba(0, 0, 0, 0.851) 1px solid;
     border-radius: 5px;
 }
 
@@ -75,12 +73,60 @@ nav .header-items {
 }
 
 
-.header-icons {
+
+/* HOME alterar as cores e detalhes */
+
+.hero{
+    background-image: url(/src/img/background-1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 20px;
 }
 
-.header-icons a {
-    margin: 0 10px;
+.home-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;  
 }
+
+.home-icons a {
+    margin: 10px;
+}
+
+.button-home {
+    text-align: center;
+}
+  
+.button-home {
+    text-align: center;
+}
+  
+.button-home {
+    text-align: center;
+    background-image: url(/src/img/background-1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .button-home button {
+    background-color: transparent;
+    border: black 1px solid;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+  }
+  
+  .button-home button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
