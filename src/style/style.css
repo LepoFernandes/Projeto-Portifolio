@@ -8,7 +8,7 @@
 }   
 
 :root {
-    --cor-1: #1E2DFA;
+    --cor-1: rgb(194, 212, 255);
     --cor-2: #1EB8FA;
     --cor-3: #9F1EFA;
     --cor-4: #571EFA;
@@ -38,7 +38,7 @@ h1{
     font-size: 110px;
 }
 
-/* HEADER alterar as cores e detalhes */
+/* HEADER */
 
 .bg-home {
     position: relative;
@@ -84,7 +84,7 @@ nav .header-items {
     
 }
 
-/* HOME alterar as cores e detalhes */
+/* HOME */
 
 .hero{
     background-image: url(/src/img/background-1.jpg);
@@ -147,19 +147,15 @@ nav .header-items {
 
 .home-icons a:hover .tooltip {
     display: block;
-    background-color: rgb(194, 212, 255);
+    background-color: var(--cor-1);
     color: var(--cor-5);
 }
 .home-icons a:hover{
    border-radius:0px 15px 15px 0px;
-   background-color: rgb(194, 212, 255);
+   background-color: var(--cor-1);
    color: var(--cor-5);
 }
 
-.button-home {
-    text-align: center;
-}
-  
 .button-home {
     text-align: center;
 }
@@ -175,8 +171,31 @@ nav .header-items {
     color: inherit;
     text-decoration: none;
 }
+.normal-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-4);
+    border: 2px solid var(--cor-3);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: transform 0.5s ease;
+}
+
+.normal-button:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-4);
+}
 
 
-.button-home button{
-    
+#texto-escrevendo {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000; 
+    font-size: 100px; 
+    font-weight: normal;
+    font-family: 'Fredericka the Great', serif;
+    color: black; 
 }
