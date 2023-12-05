@@ -105,59 +105,19 @@ nav .header-items {
 }
 
 .home-icons a {
-    
-    color: #000;
-   
-}
-
-.home-icons a:hover{
-    width: -80px;
-    color: var(--cor-6);
-}
-
-.home-icons a {
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.home-icons a {
     height: 50px;
+    text-align: center;
     position: relative;
     cursor: pointer;
     text-decoration: none;
     color: var(--cor-6); 
-    background-color: var(--cor-4); 
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 50px;
+    padding: 10px;  
+    margin: 10px;
 }
 
-.tooltip {
-    height: 50px;
-    position: absolute;
-    padding: 16px;
-    border-radius: 15px 0px 0px 15px ;
-    display: none;
-    background-color: var(--cor-5);
-    top: 50%;
-    right: 90%; 
-    transform: translateY(-50%);
-}
-
-.home-icons a:hover .tooltip {
-    display: block;
-    background-color: var(--cor-1);
-    color: var(--cor-5);
-}
 .home-icons a:hover{
-   border-radius:0px 15px 15px 0px;
-   background-color: var(--cor-1);
-   color: var(--cor-5);
-}
-
-.button-home {
-    text-align: center;
+   color: var(--cor-6);
+   transform: translateX(-15px);
 }
   
 .button-home {
@@ -167,27 +127,80 @@ nav .header-items {
     background-size: cover;
 }
 
-.button-home a {
-    color: inherit;
-    text-decoration: none;
-}
-.normal-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid black;
-    text-decoration: none;
+.btn-home {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
     border-radius: 10px;
-    font-size: 16px;
-    transition: transform 0.5s ease;
 }
 
-.normal-button:hover {
-    transform: scale(1.2);
-    color: white;
-    background-color: var(--cor-3);
-    border: 2px solid var(--cor-4);
+.btn-home:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
 
+.btn-home:active {
+    color: #000
+}
+
+.btn-home:active:after {
+    background: transparent;
+}
+
+.btn-home:hover:before {
+    opacity: 1;
+}
+
+.btn-home:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.small-icon {
+    width: 60px;
+    height: 30px;
+}
+
+.small-icon:before {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+}
+
+.small-icon i {
+    font-size: 30px;
+    text-align: center;
+}
 
 #texto-escrevendo {
     white-space: nowrap;
