@@ -71,7 +71,7 @@ nav .header-items {
     border: rgba(0, 0, 0, 0.851) 1px solid;
     border-radius: 5px;
     color: black;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .header-items {
@@ -113,6 +113,7 @@ nav .header-items {
     color: var(--cor-6); 
     padding: 10px;  
     margin: 10px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .home-icons a:hover{
