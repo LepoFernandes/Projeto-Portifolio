@@ -37,6 +37,7 @@ h1{
     font-family:'Vina Sans', sans-serif;
     font-size: 110px;
 }
+
 /* HEADER alterar as cores e detalhes */
 
 .bg-home {
@@ -48,16 +49,13 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: rgba(0, 0, 0, 0.226) 2px solid;
-    
-    
+    border-bottom: rgba(0, 0, 0, 0.226) 2px solid;    
 }
 
 .picture img {
     height: 80px; 
     border-radius: 50%; 
 }
-
 nav .header-items {
     display: flex;
     align-items: center;
@@ -86,8 +84,6 @@ nav .header-items {
     
 }
 
-
-
 /* HOME alterar as cores e detalhes */
 
 .hero{
@@ -104,13 +100,12 @@ nav .header-items {
 .home-icons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 10px;   
+    justify-content: center;  
+    
 }
 
-
 .home-icons a {
-    margin: 10px;
+    
     color: #000;
    
 }
@@ -118,7 +113,47 @@ nav .header-items {
 .home-icons a:hover{
     width: -80px;
     color: var(--cor-6);
+}
 
+.home-icons a {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-icons a {
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--cor-6); 
+    background-color: var(--cor-4); 
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.tooltip {
+    height: 50px;
+    position: absolute;
+    padding: 16px;
+    border-radius: 15px 0px 0px 15px ;
+    display: none;
+    background-color: var(--cor-5);
+    top: 50%;
+    right: 90%; 
+    transform: translateY(-50%);
+}
+
+.home-icons a:hover .tooltip {
+    display: block;
+    background-color: rgb(194, 212, 255);
+    color: var(--cor-5);
+}
+.home-icons a:hover{
+   border-radius:0px 15px 15px 0px;
+   background-color: rgb(194, 212, 255);
+   color: var(--cor-5);
 }
 
 .button-home {
@@ -137,9 +172,9 @@ nav .header-items {
 }
   
 .button-home button {
+    color: white;
     background-color: transparent;
     border: black 1px solid;
-    color: var(--cor-6);
     padding: 15px 30px;
     font-size: 18px;
     border-radius: 5px;
@@ -151,52 +186,6 @@ nav .header-items {
 .button-home button:hover {
     background-color: var(--cor-3);
     transform: scale(1.1); 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);    
 }
 
-.home-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.home-icons a {
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-    
-}
-
-.home-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.home-icons a {
-    height: 50px;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--cor-5); 
-    background-color:rgb(194, 212, 255) ; 
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.tooltip {
-    height: 50px;
-    position: absolute;
-    padding: 16px;
-    border-radius: 5px;
-    display: none;
-    background-color: rgb(194, 212, 255);
-    top: 50%;
-    right: 90%; 
-    transform: translateY(-50%);
-}
-
-.home-icons a:hover .tooltip {
-    display: block;
-}
