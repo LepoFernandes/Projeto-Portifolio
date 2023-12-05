@@ -108,14 +108,16 @@ nav .header-items {
     margin: 10px;   
 }
 
+
 .home-icons a {
     margin: 10px;
     color: #000;
+   
 }
 
 .home-icons a:hover{
     width: -80px;
-    color: #1E2DFA;
+    color: var(--cor-6);
 
 }
 
@@ -153,3 +155,48 @@ nav .header-items {
     color: white;
 }
 
+.home-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-icons a {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.home-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-icons a {
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--cor-5); 
+    background-color:rgb(194, 212, 255) ; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tooltip {
+    height: 50px;
+    position: absolute;
+    padding: 16px;
+    border-radius: 5px;
+    display: none;
+    background-color: rgb(194, 212, 255);
+    top: 50%;
+    right: 90%; 
+    transform: translateY(-50%);
+}
+
+.home-icons a:hover .tooltip {
+    display: block;
+}
