@@ -7,6 +7,16 @@
     outline: 0;
 }   
 
+:root {
+    --cor-1: #1E2DFA;
+    --cor-2: #1EB8FA;
+    --cor-3: #9F1EFA;
+    --cor-4: #571EFA;
+    --cor-5: #1E72FA;
+    --cor-6: #ffffff;
+}
+
+
 body{
     font-family: 'Nanum Gothic', sans-serif;
     width: 100%;
@@ -62,6 +72,8 @@ nav .header-items {
     background-color: transparent;
     border: rgba(0, 0, 0, 0.851) 1px solid;
     border-radius: 5px;
+    color: black;
+    transition: transform 0.3s ease-in-out;
 }
 
 .header-items {
@@ -69,7 +81,9 @@ nav .header-items {
 }
 
 .header-items a:hover {
-    background-color: blueviolet;
+    background-color:var(--cor-4);
+    transform: translateY(-10px);
+    
 }
 
 
@@ -91,11 +105,18 @@ nav .header-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px;  
+    margin: 10px;   
 }
 
 .home-icons a {
     margin: 10px;
+    color: #000;
+}
+
+.home-icons a:hover{
+    width: -80px;
+    color: #1E2DFA;
+
 }
 
 .button-home {
@@ -111,22 +132,24 @@ nav .header-items {
     background-image: url(/src/img/background-1.jpg);
     background-position: center;
     background-size: cover;
-  }
+}
   
-  .button-home button {
+.button-home button {
     background-color: transparent;
     border: black 1px solid;
-    color: white;
+    color: var(--cor-6);
     padding: 15px 30px;
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.3s ease; 
-  }
+}
   
-  .button-home button:hover {
-    background-color: #45a049;
+.button-home button:hover {
+    background-color: var(--cor-3);
     transform: scale(1.1); 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  }
+    color: white;
+}
+
