@@ -347,16 +347,16 @@ section#about {
 .skill-card {
     position: relative;
     overflow: hidden;
-    min-width: 200px; 
-    max-height: 300px; 
+    width: 200px; 
+    height: 700px; 
     padding: 20px;
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
-    background-color: black; 
+    
 }
 
 .card-inner {
-    width: 100%;
+    width: 100%; 
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -379,6 +379,7 @@ section#about {
     text-align: center;
     color: white;
     border-radius: 10px;
+    background-color: black;
 }
 
 .card-back {
