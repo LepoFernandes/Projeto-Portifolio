@@ -22,6 +22,10 @@ body{
     width: 100%;
     height: 100%;
     position: relative;
+    background-image: url(/src/img/background-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 img{
@@ -38,6 +42,12 @@ h1{
     font-size: 110px;
 }
 
+h2{
+    font-family: 'Fredericka the Great', serif;
+    font: 50px;
+    font-size: normal;
+}
+
 /* HEADER */
 
 .bg-home {
@@ -50,51 +60,112 @@ h1{
     align-items: center;
     padding: 20px;
     border-bottom: rgba(0, 0, 0, 0.226) 2px solid;    
+    background-color: white;
 }
 
 .picture img {
     height: 80px; 
     border-radius: 50%; 
 }
-nav .header-items {
+
+.header-items {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.header-items a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.875); 
-    margin:15px;
-    padding: 5px;
-    font-size: 18px;
-    background-color: transparent;
-    border: rgba(0, 0, 0, 0.851) 1px solid;
-    border-radius: 5px;
-    color: black;
+.border-glow {
+    min-width: 100px;
+    min-height: 40px;
+    max-height: 300px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.header-items a{
+    text-align: center;
+    padding-top: 10px;
     transition: transform 0.5s ease-in-out;
 }
 
-.header-items {
-    margin-left: auto; 
+.header-items a:hover {
+    transform: translateY(-10px);
 }
 
-.header-items a:hover {
-    background-color:var(--cor-4);
-    transform: translateY(-10px);
-    
+
+.border-glow:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.border-glow:active {
+    color: white
+}
+
+.border-glow:active:after {
+    background: black;
+}
+
+.border-glow:hover:before {
+    opacity: 1;
+}
+
+.border-glow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    z-index: 1000;
+    padding-top: 20px; 
 }
 
 /* HOME */
 
 .hero{
-    background-image: url(/src/img/background-1.jpg);
-    background-position: center;
-    background-size: cover;
     width: 100vw;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 80px; 
+    padding-top: 20px;
 }
 
 .home-icons {
@@ -123,9 +194,7 @@ nav .header-items {
   
 .button-home {
     text-align: center;
-    background-image: url(/src/img/background-1.jpg);
-    background-position: center;
-    background-size: cover;
+    margin-bottom: 30px;
 }
 
 .btn-home {
@@ -211,4 +280,111 @@ nav .header-items {
     font-weight: normal;
     font-family: 'Fredericka the Great', serif;
     color: black; 
+}
+
+/*ABOUT*/
+
+
+section#about {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 80px; 
+    padding-top: 70px;
+}
+
+
+.about-text {
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; 
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.500);
+}
+
+
+.about-text h2 {
+    color: black; 
+    font-size: 28px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: black; 
+}
+
+.about-text img{
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.about-text {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    min-width: 200px; 
+    max-height: 300px; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: black; 
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.skill-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-back p {
+    margin: 0;
 }

@@ -15,4 +15,20 @@ function escreverTexto(elemento, texto, intervalo) {
   const intervaloDeEscrita = 100;
   escreverTexto(elementoTexto, textoParaEscrever, intervaloDeEscrita);
 
-  
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var scrollLinks = document.querySelectorAll('.border-glow');
+
+    scrollLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            var targetId = this.getAttribute('href').substring(1);
+            var targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
