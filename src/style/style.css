@@ -347,23 +347,24 @@ section#about {
 .skill-card {
     position: relative;
     overflow: hidden;
-    width: 200px; 
-    height: 700px; 
+    width: 200px;  
     padding: 20px;
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
+    perspective: 1000px;
     
 }
 
 .card-inner {
     width: 100%; 
-    height: 100%;
+    height: 160%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
 
 .skill-card:hover .card-inner {
     transform: rotateY(180deg);
+    
 }
 
 .card-front,
