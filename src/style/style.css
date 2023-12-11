@@ -228,7 +228,7 @@ h2{
 }
 
 .btn-home:active {
-    color: #000
+    color: #fff
 }
 
 .btn-home:active:after {
@@ -436,7 +436,7 @@ input[type="radio"] {
     display: none;
 }
   
-label {
+.label-slide {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -472,3 +472,76 @@ a button {
     margin: 10px; 
 }    
 
+/*CONTACT*/
+
+section#contact h1{
+    font-size: 54px;
+}
+
+section#contact{
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact-content{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font: normal;
+    font-size: 24px;
+}
+
+.form-copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.click-copy{
+    width: 30%;
+    height: 50vh;
+    margin-right: 25px;
+    margin-top: 50px;
+}
+
+.contact-form{
+    width: 300px;
+    height: 50vh;
+}
+
+#emailDisplay {
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #afafaf;
+    padding: 20px;
+  }
+
+  .form-label {
+    display: block;
+    margin: 10px;
+    list-style: none;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+ 

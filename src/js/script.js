@@ -65,3 +65,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   showSlide(currentIndex);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var copyButton = document.getElementById('copyButton');
+  var emailDisplay = document.getElementById('emailDisplay');
+
+  copyButton.addEventListener('click', function() {
+    
+    var range = document.createRange();
+    range.selectNode(emailDisplay);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    
+    try {
+      document.execCommand('copy');
+      alert('Endereço de e-mail copiado para a área de transferência!');
+    } catch (err) {
+      console.error('Erro ao copiar o endereço de e-mail: ', err);
+    }
+
+    window.getSelection().removeAllRanges();
+  });
+});
+
+
+
+

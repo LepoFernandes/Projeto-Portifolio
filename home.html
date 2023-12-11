@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="src/style/style.css">
 
+    
+
 </head>
 <body>
     <div class="bg-home">
@@ -169,30 +171,57 @@
             
             <div class="radio-buttons">
                 <input type="radio" name="slide" id="radio1" checked>
-                <label for="radio1"></label>
+                <label class="label-slide" for="radio1"></label>
             
                 <input type="radio" name="slide" id="radio2">
-                <label for="radio2"></label>
+                <label class="label-slide" for="radio2"></label>
             
                 <input type="radio" name="slide" id="radio3">
-                <label for="radio3"></label>
+                <label class="label-slide" for="radio3"></label>
 
                 <input type="radio" name="slide" id="radio4">
-                <label for="radio4"></label>
+                <label class="label-slide" for="radio4"></label>
 
                 <input type="radio" name="slide" id="radio5">
-                <label for="radio5"></label>
+                <label class="label-slide" for="radio5"></label>
 
                 <input type="radio" name="slide" id="radio6">
-                <label for="radio6"></label>
+                <label class="label-slide" for="radio6"></label>
 
                 <input type="radio" name="slide" id="radio7">
-                <label for="radio7"></label>
+                <label class="label-slide" for="radio7"></label>
               </div>
     </section>
     <section id="contact">
-        <h1>Lorem ipsum dolor sit, amet conseccilaborum! </h1>
+        <div class="contact-content">
+            <h1>Gostou do que viu?</h1>
+            <h2>Entre em contato comigo.</h2>
+            <p>Deixe uma mensagem ou use o email abaixo.</p>
+        </div> 
+        <div class="form-copy">
+            <div class="click-copy">
+                <div id="emailDisplay">
+                    lucasfernandesg@hotmail.com
+                </div>
+                <button class="btn-home" id="copyButton">Clique e Copie</button>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" data-form action="https://formsubmit.co/lucasfernandesg@email.com" method="POST">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                
+                    <label for="message" class="form-label">Mensagem:</label>
+                    <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+                
+                    <button class="border-glow" data-button type="submit" class="form-button">Enviar Mensagem</button>
+                  </form>
+            </div>
+        </div>
     </section>
+
     <footer class="footer">
 
     </footer>
