@@ -17,8 +17,8 @@
     --cor-6: #ffffff;
 }
 /*DARK_MODE*/
-.dark-mode body{
-    background-image: url(/src/img/background-mode-dark.jpg);
+.dark-mode{
+    background-image: url(/src/img/backdark.jpeg);
     color: var(--cor-6);
 }
 .dark-mode .header-content{
@@ -47,6 +47,9 @@
 .dark-mode .btn-home:after{
     background:white;
 }
+.dark-mode .home-icons a:hover{
+    color: #000;
+}
 .dark-mode #texto-escrevendo{
     color: white;
 }
@@ -59,7 +62,32 @@
 .dark-mode .about-text p{
     color: white;
 }
-
+.dark-mode .card-front,
+.card-back{
+    color: black;
+    background-color: white;
+}
+.dark-mode .descricao{
+    color: white;
+    background-color: #000;
+}
+.dark-mode .contact-content{
+    color: white;
+}
+.dark-mode #emailDisplay{
+    border: 2px solid white;
+}
+.dark-mode footer{
+    color: #000;
+    background-color: #fff;
+}
+.dark-mode footer a{
+    color: #000;
+}
+.dark-mode .btn-whatsapp .tooltip-text{
+    color: #333;
+    background-color: white;
+}
 
 
 
@@ -536,6 +564,7 @@ section#contact{
     flex-direction: column;
     font: normal;
     font-size: 24px;
+    color: black;
 }
 
 .form-copy{
@@ -619,17 +648,13 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    margin-top: 25px;
-  }
-
-  footer p {
-    margin: 0;
+    margin-top: 20px;
+    width: 100vw;
   }
 
   footer ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
   }
 
   footer li {
