@@ -13,25 +13,6 @@ const elementoTexto = document.getElementById('texto-escrevendo');
 const textoParaEscrever = 'LUCAS FERNANDES';
 const intervaloDeEscrita = 100;
 escreverTexto(elementoTexto, textoParaEscrever, intervaloDeEscrita);
-  
-
-let count = 1;
-document.getElementById("radio1").checked = true;
-
-setInterval(function(){
-  nextImage();
-},6000)
-
-function nextImage(){
-  count++;
-  if(count>7){
-    count = 1;
-  }
-
-
-  document.getElementById("radio"+count).checked = true;
-}
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,4 +30,38 @@ document.addEventListener('DOMContentLoaded', function () {
           }
       });
   });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.slide');
+  const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide) => {
+      slide.style.display = 'none';
+    });
+
+    slides[index].style.display = 'block';
+    slides[index].classList.add('fade'); 
+  }
+
+  function updateSlide() {
+    radioButtons.forEach((radio, index) => {
+      if (radio.checked) {
+        currentIndex = index;
+        slides.forEach((slide) => {
+          slide.classList.remove('fade'); 
+        });
+        showSlide(currentIndex);
+      }
+    });
+  }
+
+  radioButtons.forEach((radio) => {
+    radio.addEventListener('change', updateSlide);
+  });
+
+  showSlide(currentIndex);
 });
