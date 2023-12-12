@@ -18,7 +18,7 @@
 }
 /*DARK_MODE*/
 .dark-mode{
-    background-image: url(/src/img/backdark.jpeg);
+    background: url(/src/img/backdark.jpeg);
     color: var(--cor-6);
 }
 .dark-mode .header-content{
