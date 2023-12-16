@@ -94,3 +94,4 @@ function toggleDarkMode() {
 }
 
 
+AOS.init();
