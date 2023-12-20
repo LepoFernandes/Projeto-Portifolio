@@ -492,7 +492,7 @@ footer li {
     margin-right: 10px;
 }
 footer a {
-    color: var(--cor-6);
+    color: var(--azul-escuro-escuro);
     text-decoration: none;
 }
 .btn-whatsapp {
@@ -536,12 +536,13 @@ footer a {
 ::-webkit-scrollbar {
     width: 10px; 
 }
-  
 ::-webkit-scrollbar-thumb {
     background-color: var(--laranja-claro); 
     border-radius: 5px; 
 }
-  
+::-webkit-scrollbar-thumb:active{
+    background-color: var(--laranja-escuro);
+}
 ::-webkit-scrollbar-track {
     background-color: var(--azul-escuro-claro); 
 }
