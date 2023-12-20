@@ -1,3 +1,5 @@
+
+document.getElementById("h1-home").style.display = "none";
 function escreverTexto(elemento, texto, intervalo) {
   let i = 0;
   const escrever = setInterval(function() {
@@ -87,11 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.getSelection().removeAllRanges();
   });
 });
-
-
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-}
 
 
 AOS.init();

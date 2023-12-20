@@ -22,96 +22,93 @@
 
 </head>
 <body>
-    <div class="bg-home">
-        <header class="header-content fixed-menu">
-            <div class="picture">
-                <img src="src/img/img-site-menu.jpeg" alt="Foto Lucas">
-            </div>
-            <nav>
-                <div class="header-items">
-                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" ><i class="fa-solid fa-sun"></i></button>
-                    <a href="#home" class="smooth">Home</a>
-                    <a href="#about" class="smooth">Sobre mim</a>
-                    <a href="#projects" class="smooth">Projetos</a>
-                    <a href="#contact" class="smooth">Contato</a>
+    <section class="home">
+        <div class="bg-home">
+            <header class="header-content">
+                <div class="picture">
+                    <img src="src/img/img-site-menu.jpeg" alt="Foto Lucas">
                 </div>
-            </nav>
-        </header>
-    </div>
-    <main class="hero" id="home">
-        <div class="home-icons">
-            <a href="https://www.instagram.com/lepofernandes/" target="_blank" class="icon btn-home small-icon">
-                <i class="fa-brands fa-instagram fa-2x"></i> 
-            </a>
-            <a href="https://twitter.com/LepoGomes" target="_blank" class="icon btn-home small-icon" >
-                <i class="fa-brands fa-twitter fa-2x"></i>                   
-            </a>
-            <a href="#" class="icon btn-home small-icon" >
-                <i class="fa-brands fa-linkedin fa-2x"></i>                    
-            </a>
-            <a href="https://github.com/LepoFernandes" target="_blank" class="icon btn-home small-icon" >
-                <i class="fa-brands fa-github fa-2x"></i> 
-            </a>
-        </div>                   
-        <div class="hero-content">
-            <p>Desenvolvedor Front-end,</p>
-            <div id="texto-escrevendo">
-                <h1 id="h1-home">Lucas Fernandes</h1>
+                <nav>
+                    <div class="header-items">
+                        <a href="#home" class="smooth">HOME</a>
+                        <a href="#about" class="smooth">SOBRE MIM</a>
+                        <a href="#projects" class="smooth">PROJETOS</a>
+                        <a href="#contact" class="smooth">CONTATO</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <main class="hero" id="home">
+            <div class="home-icons">
+                <a href="https://www.instagram.com/lepofernandes/" target="_blank" class="icon btn-home small-icon">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/LepoGomes" target="_blank" class="icon btn-home small-icon" >
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                </a>
+                <a href="#" class="icon btn-home small-icon" >
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/LepoFernandes" target="_blank" class="icon btn-home small-icon" >
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>
             </div>
-            <p>Bem-vindo ao meu portifólio online.</p>
-        </div>
-        </main>
-        <div class="button-home">
-            <a href="#projects"><button class="btn-home" type="button">PROJETOS</button></a>
-        </div>
+            <div class="hero-content">
+                <p>Desenvolvedor Front-end,</p>
+                <div id="texto-escrevendo">
+                    <h1 id="h1-home">Lucas Fernandes</h1>
+                </div>
+                <p>Bem-vindo ao meu portifólio online.</p>
+            </div>
+            </main>
+            <div class="button-home">
+                <a href="#projects"><button class="btn-home" type="button">PROJETOS</button></a>
+            </div>
+    </section>
         
     <section id="about">          
         <div class="about-me">
             <div  class="about-text" data-aos="fade-up" data-aos-deLay="150">
                 <h2 id="about-text">Sobre mim</h2>
                 <p>Olá, eu sou Lucas. Tenho 24 anos, minha carreira começou no setor de varejo, onde ao longo dos anos, desenvolvi habilidades robustas em gestão, tomada de decisões e resolução de problemas enquanto atuava como empreendedor em um mercado e bar.</p>
-                <p>Recentemente, decidi embarcar em uma empolgante transição para a área de Engenharia de Software. Acredito que as habilidades adquiridas durante minha experiência como empreendedor podem ser aplicadas de maneira inovadora no contexto tecnológico.</p>
                 <p>Atualmente estou cursando Engenharia de Software pela Estácio e muito ansioso para explorar novos horizontes na área, aplicando minha paixão por aprender e meu histórico empreendedor ao mundo tecnológico.</p>
             </div>
-            <div class="img-div" data-aos="zoom-in" data-aos-deLay="150">
-                <img src="src/img/img-site-eu.png" alt="Foto Lucas">
-            </div>
-        </div>
-        <div class="cards">
+            <div class="cards">
                 <h1>Principais habilidades :</h1>
-            <div class="skills-grid " id="skillsGrid" style="height: 350px;">
+            <div class="skills-grid " id="skillsGrid" style="height: 300px;">
                 <div class="skill-card " data-skill="HTML" data-aos="fade-right">
-                    <div class="card-inner border-glow">
+                    <div class="card-inner">
                         <div class="card-front">
                             <i class="fab fa-html5"></i>
                             <h3>HTML</h3>
                         </div>
-                        <div class="card-back border-glow">
+                        <div class="card-back">
                             <p>HTML (Hypertext Markup Language) é a linguagem padrão para a criação e design de páginas web.</p>
                         </div>
                     </div>
                 </div>                
             <div class="skill-card " data-skill="CSS" data-aos="fade-down">
-                <div class="card-inner border-glow">
+                <div class="card-inner">
                     <div class="card-front">
                         <i class="fab fa-css3"></i>
                         <h3>CSS</h3>
                     </div>
-                    <div class="card-back border-glow">
+                    <div class="card-back">
                         <p>CSS (Cascading Style Sheets) é usado para estilizar o layout de documentos HTML.</p>
                     </div>
                 </div>
             </div>  
             <div class="skill-card " data-skill="JS" data-aos="fade-left">
-                <div class="card-inner border-glow">
+                <div class="card-inner">
                     <div class="card-front">
                         <i class="fab fa-js"></i>
                         <h3>JavaScript</h3>
                     </div>
-                    <div class="card-back border-glow">
+                    <div class="card-back">
                         <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web interativo.</p>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -122,8 +119,8 @@
                     <div class="slide-content">
                       <p class="descricao">Criação do site oficial para meu bar, apresentando alguns produtos e informações de contato. Utilizei um design vibrante e recursos interativos para atrair clientes e promover a atmosfera única do estabelecimento.</p>
                       <div class="button-projects">
-                          <a href="https://bar-sedenir.vercel.app" target="_blank"><button class="border-glow">Visite a Página</button></a>
-                          <a href="https://github.com/LepoFernandes/Projeto-Bar" target="_blank"><button class="border-glow">Visite o Repositório</button></a>
+                          <a href="https://bar-sedenir.vercel.app" target="_blank"><button class="btn-home">Visite a Página</button></a>
+                          <a href="https://github.com/LepoFernandes/Projeto-Bar" target="_blank"><button class="btn-home">Visite o Repositório</button></a>
                       </div>
                   </div>
                 </div>
@@ -132,8 +129,8 @@
                     <div class="slide-content">                     
                       <p class="descricao">Desenvolvimento de um website moderno para uma barbearia, destacando os serviços oferecidos. A interface elegante e responsiva foi criada para proporcionar uma experiência visual agradável aos clientes, foi um projeto didático e não é autoral.</p>
                       <div class="button-projects">
-                          <a href="https://lepofernandes.github.io/Projeto-Barbearia/" target="_blank"><button class="border-glow">Visite a Página</button></a>
-                          <a href="https://github.com/LepoFernandes/Projeto-Barbearia" target="_blank"><button class="border-glow">Visite o Repositório</button></a>
+                          <a href="https://lepofernandes.github.io/Projeto-Barbearia/" target="_blank"><button class="btn-home">Visite a Página</button></a>
+                          <a href="https://github.com/LepoFernandes/Projeto-Barbearia" target="_blank"><button class="btn-home">Visite o Repositório</button></a>
                       </div>
                   </div>
                 </div>
@@ -142,8 +139,8 @@
                     <div class="slide-content">                      
                       <p class="descricao">Elaboração de uma landing page envolvente para uma marca de pipocas gourmet. Destaque para imagens atrativas. O objetivo era criar uma presença online que despertasse o apetite dos visitantes.</p>
                       <div class="button-projects">
-                          <a href="https://lepofernandes.github.io/landing-page/" target="_blank"><button class="border-glow">Visite a Página</button></a>
-                          <a href="https://github.com/LepoFernandes/landing-page" target="_blank"><button class="border-glow">Visite o Repositório</button></a>
+                          <a href="https://lepofernandes.github.io/landing-page/" target="_blank"><button class="btn-home">Visite a Página</button></a>
+                          <a href="https://github.com/LepoFernandes/landing-page" target="_blank"><button class="btn-home">Visite o Repositório</button></a>
                       </div>
                   </div>
                 </div>
@@ -152,8 +149,8 @@
                     <div class="slide-content">                        
                         <p class="descricao">Design de uma tela de login para aplicações web. O foco foi na usabilidade, com layouts intuitivos. Adotei uma abordagem responsiva para garantir uma experiência consistente em diferentes dispositivos. Projeto didático e não é autoral.</p>
                         <div class="button-projects">
-                            <a href="https://lepofernandes.github.io/Projeto-Login/" target="_blank"><button class="border-glow">Visite a Página</button></a>
-                            <a href="https://github.com/LepoFernandes/Projeto-Login" target="_blank"><button class="border-glow">Visite o Repositório</button></a>
+                            <a href="https://lepofernandes.github.io/Projeto-Login/" target="_blank"><button class="btn-home">Visite a Página</button></a>
+                            <a href="https://github.com/LepoFernandes/Projeto-Login" target="_blank"><button class="btn-home">Visite o Repositório</button></a>
                         </div>
                     </div>
                   </div>
@@ -162,8 +159,8 @@
                         <div class="slide-content">                        
                         <p class="descricao">Mais um projeto de tela de login para aplicações web. Também focada na usabilidade e com layouts intuitivos. Mais uma vez usei uma abordagem responsiva para usar em inúmeros dispositivos, dessa vez um projeto autoral.</p>
                         <div class="button-projects">
-                            <a href="https://lepofernandes.github.io/Projeto-Login2/" target="_blank"><button class="border-glow">Visite a Página</button></a>
-                            <a href="https://github.com/LepoFernandes/Projeto-Login2" target="_blank"><button class="border-glow">Visite o Repositório</button></a>
+                            <a href="https://lepofernandes.github.io/Projeto-Login2/" target="_blank"><button class="btn-home">Visite a Página</button></a>
+                            <a href="https://github.com/LepoFernandes/Projeto-Login2" target="_blank"><button class="btn-home">Visite o Repositório</button></a>
                         </div>
                     </div>
                   </div>
@@ -172,8 +169,8 @@
                         <div class="slide-content">                        
                         <p class="descricao">Desenvolvimento de um projeto de integração de redes sociais utilizando iFrame. Integrei feeds de redes sociais selecionadas em um único painel, proporcionando uma visão consolidada das atividades online. Projeto didático e não é autoral.</p>
                         <div class="button-projects">
-                            <a href="https://lepofernandes.github.io/Projeto-Social/" target="_blank"><button class="border-glow">Visite a Página</button></a>
-                            <a href="https://github.com/LepoFernandes/Projeto-Social" target="_blank"><button class="border-glow">Visite o Repositório</button></a>
+                            <a href="https://lepofernandes.github.io/Projeto-Social/" target="_blank"><button class="btn-home">Visite a Página</button></a>
+                            <a href="https://github.com/LepoFernandes/Projeto-Social" target="_blank"><button class="btn-home">Visite o Repositório</button></a>
                         </div>
                     </div>
                   </div>
@@ -182,8 +179,8 @@
                         <div class="slide-content">                        
                         <p class="descricao">Concepção de um site organizador de tarefas para aumentar a produtividade. Adotei um design limpo e intuitivo para facilitar a gestão eficiente das atividades diárias.</p>
                         <div class="button-projects">
-                            <a href="https://lepofernandes.github.io/Projeto-Organizador/" target="_blank"><button class="border-glow">Visite a Página</button></a>
-                            <a href="https://github.com/LepoFernandes/Projeto-Organizador" target="_blank"><button class="border-glow">Visite o Repositório</button></a>
+                            <a href="https://lepofernandes.github.io/Projeto-Organizador/" target="_blank"><button class="btn-home">Visite a Página</button></a>
+                            <a href="https://github.com/LepoFernandes/Projeto-Organizador" target="_blank"><button class="btn-home">Visite o Repositório</button></a>
                         </div>
                     </div>
                   </div>
