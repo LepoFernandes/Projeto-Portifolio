@@ -38,7 +38,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    background-color: var(--azul-escuro-escuro);
 }
 img{
     width: 100%;
@@ -107,9 +107,8 @@ a:hover {
     padding-top: 5px;
     transition: transform 0.5s ease-in-out;
     width: 100px;
-    border: var(--cor-4) 2px solid;
     padding-bottom: 5px;
-    border: 1px solid var(--laranja-escuro);
+    border: 2px solid var(--laranja-escuro);
 }
 .header-items a:hover {
     transform: translateY(-10px);
@@ -545,4 +544,98 @@ footer a {
 }
 ::-webkit-scrollbar-track {
     background-color: var(--azul-escuro-claro); 
+}
+
+@media screen and (max-width: 768px){
+    .picture{
+        display: none;
+    }
+    .home-icons{
+        flex-direction: row;
+        margin: 20px;
+    }
+    .home-icons a:hover{
+        transform: translateY(-15px);
+     } 
+    .hero{
+        flex-direction: column;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .hero-content{
+        width: 80vw;
+        height: 20vh;
+    }
+    #texto-escrevendo{
+        font-size: 35px;
+    }
+    .home{
+        height: 150vw;
+    }
+    
+    /*SOBRE*/
+
+    section#about{
+        width: 100vw;
+        min-height: 120vh;
+        position: relative;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .about-text{
+        min-height: 400px; 
+    }
+    .skills-grid{
+        gap: 15;
+        margin-top: 10px;
+    }
+    .skill-card{
+        padding: 0;
+        height: 200px;
+        width: 130px;
+    }
+
+    /*PROJETOS*/
+
+    .slide img {
+        max-width: 100%;
+        height: auto;
+    }
+    .slide-content{
+        top: 0;
+        width: 100%;
+        left: 0;
+        position: relative;
+        padding: 0;
+    }
+    .slideshow-container{
+        height: 93vh;
+    }
+
+    /*CONTATO*/
+
+    section#contact{
+        width: 90vw;
+    }
+
+    .form-copy{
+        flex-direction: column;
+        position: absolute;
+    }
+    .click-copy{
+        width: 50%;
+        height: 30vh;
+        position: relative;
+    }
+    .contact-form{
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    /*FOOTER*/
+
+    .footer{
+        margin-top: 300px;
+    }
 }

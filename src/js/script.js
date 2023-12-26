@@ -72,22 +72,40 @@ document.addEventListener('DOMContentLoaded', function() {
   var emailDisplay = document.getElementById('emailDisplay');
 
   copyButton.addEventListener('click', function() {
-    
     var range = document.createRange();
     range.selectNode(emailDisplay);
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
-    
+
     try {
+      
       document.execCommand('copy');
-      alert('Endereço de e-mail copiado para a área de transferência!');
+
+  
+      Swal.fire({
+        title: 'Copiado!',
+        text: 'O texto foi copiado para a área de transferência.',
+        icon: 'success',
+        confirmButtonText: 'Ok'
+      });
+
     } catch (err) {
-      console.error('Erro ao copiar o endereço de e-mail: ', err);
+      
+      console.error('Erro ao copiar: ', err);
+
+      
+      Swal.fire({
+        title: 'Erro!',
+        text: 'Ocorreu um erro ao tentar copiar o texto.',
+        icon: 'error',
+        confirmButtonText: 'Ok'
+      });
     }
 
     window.getSelection().removeAllRanges();
   });
 });
+
 
 
 AOS.init();
