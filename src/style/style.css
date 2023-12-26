@@ -587,13 +587,16 @@ footer a {
         min-height: 400px; 
     }
     .skills-grid{
-        gap: 15;
+        gap: 10px;
         margin-top: 10px;
     }
     .skill-card{
         padding: 0;
         height: 200px;
-        width: 130px;
+        width: 120px;
+    }
+    .cards h1{
+        margin-left: 15px;
     }
 
     /*PROJETOS*/
@@ -608,6 +611,9 @@ footer a {
         left: 0;
         position: relative;
         padding: 0;
+    }
+    .descricao{
+        font-size: 16px;
     }
     .slideshow-container{
         height: 93vh;
