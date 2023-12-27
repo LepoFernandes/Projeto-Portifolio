@@ -235,7 +235,7 @@ section#about {
 }
 .about-text {
     width: 70vw;
-    height: 500px;
+    height: 235px;
     padding: 20px;
     border-radius: 8px; 
     overflow: hidden;
@@ -547,44 +547,48 @@ footer a {
 }
 
 @media screen and (max-width: 768px){
+    
+    section#home {
+        height: 100vh;
+    }
     .picture{
         display: none;
     }
     .home-icons{
         flex-direction: row;
-        margin: 20px;
+        margin: 50px;
     }
     .home-icons a:hover{
         transform: translateY(-15px);
      } 
     .hero{
         flex-direction: column;
+        height: auto;
         margin-top: 0;
         padding-top: 0;
     }
     .hero-content{
-        width: 80vw;
-        height: 20vh;
+        width: 95%;
+        margin: 50px;
     }
     #texto-escrevendo{
         font-size: 35px;
     }
-    .home{
-        height: 150vw;
-    }
+   
     
     /*SOBRE*/
 
     section#about{
         width: 100vw;
-        min-height: 120vh;
-        position: relative;
+        min-height: 100vh;
     }
     .about-me{
         flex-direction: column;
+        height: auto;
     }
     .about-text{
-        min-height: 400px; 
+        width: 90vw;
+        height: 400px;
     }
     .skills-grid{
         gap: 10px;
@@ -592,8 +596,12 @@ footer a {
     }
     .skill-card{
         padding: 0;
-        height: 200px;
+        height: 250px;
         width: 120px;
+    }
+    .cards{
+        height: 500px;
+        margin-bottom: 20px;
     }
     .cards h1{
         margin-left: 15px;
@@ -615,8 +623,11 @@ footer a {
     .descricao{
         font-size: 16px;
     }
+    .projetos{
+        height: 100vh;
+    }
     .slideshow-container{
-        height: 93vh;
+        height: 80%;
     }
 
     /*CONTATO*/
