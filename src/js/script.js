@@ -106,6 +106,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var hamburgerIcon = document.querySelector('.hamburger-menu');
+  var headerItems = document.querySelector('.header-items');
 
+  hamburgerIcon.addEventListener('click', function() {
+      headerItems.classList.toggle('show');
+  });
+
+  var menuItems = document.querySelectorAll('.header-items a');
+  menuItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+          headerItems.classList.remove('show');
+      });
+  });
+});
 
 AOS.init();

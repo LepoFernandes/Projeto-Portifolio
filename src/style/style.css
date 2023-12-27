@@ -69,6 +69,15 @@ h2{
 .bg-home {
     position: relative;
 }
+nav{
+    display: flex;
+}
+.hamburger-menu i{
+    color: var(--laranja-escuro);
+    margin: 10px;
+    cursor: pointer;
+    display: none;
+}
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -560,7 +569,23 @@ footer a {
     }
     .home-icons a:hover{
         transform: translateY(-15px);
-     } 
+    } 
+    .hamburger-menu i{
+        display: block; 
+    }
+    .header-items {
+        flex-direction: column;
+        display: none;
+    }
+
+    .header-items.show {
+        display: flex;
+    }
+
+    .header-content{
+        height: auto;
+        justify-content: center;
+    }
     .hero{
         flex-direction: column;
         height: auto;
