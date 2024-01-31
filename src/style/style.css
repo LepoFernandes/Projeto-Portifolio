@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    
 }   
 :root {
     /* Cores HEX */
@@ -21,8 +20,12 @@
     --battleship-gray-hsl: hsla(0, 0%, 55%, 1);
     --ultra-violet-hsl: hsla(239, 17%, 48%, 1);
     --marian-blue-hsl: hsla(239, 41%, 41%, 1);
-  }
+}
 
+@font-face {
+    font-family: 'Cookie Supply DEMO';
+    src: url(/src/font/Cookie\ Supply\ DEMO.otf) format('opentype');
+}
 
 
 /*TUDO*/
@@ -57,12 +60,11 @@ h2{
     font-family: 'Arial', serif;
     font: 50px;
     font-size: normal;
-    color: var(--laranja-claro);
+    color: var(--marian-blue);
 }
-
 /* HEADER */
 .home{
-    background-color: var(--azul-escuro-escuro);
+    background-color: var(--white-smoke);
 }
 .bg-home {
     position: relative;
@@ -71,7 +73,7 @@ nav{
     display: flex;
 }
 .hamburger-menu i{
-    color: var(--laranja-escuro);
+    color: var(--ultra-violet);
     margin: 10px;
     cursor: pointer;
     display: none;
@@ -85,7 +87,6 @@ nav{
     padding: 20px;
     border-bottom: rgba(0, 0, 0, 0.226) 2px solid;  
     border-color: var(--marian-blue);  
-    background-color: var(--azul-claro-escuro);
 }
 .picture img { 
     border-radius: 5px;
@@ -97,41 +98,57 @@ nav{
     align-items: center;
 }
 a {
-    color: var(--branco-neutro);
+    color: var(--jet);
     text-decoration: none;
     margin: 0 15px;
     transition: color 0.3s ease;
     
 } 
 a:hover {
-    color: var(--laranja-claro); 
+    color: var(--ultra-violet); 
 } 
+
 .header-items {
     display: flex;
     gap: 5px;   
 }
-.header-items a{
-    text-align: center;
+
+.header-items a {
+    position: relative;
     padding-top: 5px;
     transition: transform 0.5s ease-in-out;
     width: 100px;
-    padding-bottom: 5px;
-    border: 2px solid var(--laranja-escuro);
+    padding-bottom: 8px;  
 }
-.header-items a:hover {
-    transform: translateY(-10px);
+
+.header-items a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333; 
+    transition: width 0.5s ease; 
+}
+
+.header-items a:hover::before {
+    width: 100%;
 }
 
 /* HOME */
 
+.home{
+    height: 100vh;
+}
+
 .hero{
     width: 100vw;
-    height: 70vh;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px; 
-    padding-top: 20px;
+    margin: 25px;
 }
 
 .hero-content p{
@@ -146,8 +163,8 @@ a:hover {
     overflow: hidden;
     border-right: 2px solid var(--marian-blue); 
     font-size: 100px; 
-    font-weight: normal;
-    font-family: 'Fredericka the Great', serif;
+    font-weight: bolder;
+    font-family: 'Cookie Supply DEMO';
     color: var(--marian-blue); 
 }
 
@@ -155,10 +172,12 @@ a:hover {
 
 section#about {
     width: 100vw;
-    background-color: var(--azul-escuro-escuro);
+    background-color: var(--battleship-gray);
+    border-radius: 20px;
+    height: 100vh;
 }
 .about-text {
-    width: 70vw;
+    width: 70%;
     height: 235px;
     padding: 20px;
     border-radius: 8px; 
@@ -166,12 +185,12 @@ section#about {
     margin: 20px;
 }
 .about-text h2 {
-    color: var(--laranja-claro); 
+    color: var(--ultra-violet); 
     font-size: 38px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .about-text p {
-    color: var(--branco-neutro); 
+    color: var(--white-smoke); 
     font-size: 18px;
 }
 .about-me{
@@ -190,7 +209,7 @@ section#about {
     height: 400px;
 }
 .cards h1{
-    color: var(--branco-neutro);
+    color: var(--ultra-violet);
 }
 .skills-grid {
     display: flex;
@@ -226,9 +245,9 @@ section#about {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--branco-neutro);
+    color: var(--white-smoke);
     border-radius: 10px;
-    background-color: var(--laranja-escuro);
+    background-color: var(--marian-blue);
 }
 .card-back {
     transform: rotateY(180deg);
@@ -240,77 +259,16 @@ section#about {
 /*PROJETOS*/
   
 .projetos {
+    height: 100vh;
+    width: 100vw;
     position: relative;
-    background-color: var(--azul-escuro-escuro);
+    background-color: var(--white-smoke);
 } 
-.slideshow-container {
-    height: 100vh;
-    overflow: hidden;
-    float: right;
-}  
-.slide {
-    display: none;
-    height: 100vh;
-}  
-.slide-content {
-    position: absolute;
-    top: 100px;
-    left: 30px;
-    width: 25%; 
-    box-sizing: border-box;
-    padding: 10px;
-}  
-img {
-    width: 100%;
-    height: 100%;
-}  
-.fade {
-    animation: fade 1.5s ease-in-out;
-} 
-.radio-buttons {
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 60px;
-} 
-input[type="radio"] {
-    display: none;
-} 
-.label-slide {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: var(--laranja-claro);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    
-}
-input[type="radio"]:checked + label {
-    background-color: var(--laranja-escuro);
-} 
-@keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-}
-.descricao{
-    font-size: 25px;
-    color: var(--branco-neutro);
-    padding: 10px;   
-}
-a button {
-    margin: 2px;
-}   
-.button-projects{
-    display: flex;
-}
+
 
 /*CONTACT*/
 section#contact{
-    background-color: var(--azul-escuro-escuro);
+    background-color: var(--battleship-gray);
 }
 section#contact h1{
     font-size: 54px;
@@ -328,7 +286,7 @@ section#contact{
     flex-direction: column;
     font: normal;
     font-size: 24px;
-    color: var(--laranja-escuro);
+    color: var(--ultra-violet);
     padding-top: 50px;
 }
 .form-copy{
@@ -349,11 +307,11 @@ section#contact{
     margin-bottom: 165px;
 }
 #emailDisplay {
-    border: 2px solid var(--preto-neutro);
+    border: 2px solid var(--jet);
     padding: 15px;
     margin-bottom: 20px;
     background-color: #ecf0f1;
-    color: var(--azul-escuro-escuro);
+    color: var(--marian-blue);
     font-size: 18px;
     display: inline-block;
     border-radius: 5px;
@@ -362,7 +320,7 @@ section#contact{
 form {
     max-width: 500px;
     margin: auto;
-    background-color: var(--azul-claro-claro);
+    background-color: var(--jet);
     padding: 20px;    
 }
 .form-label {
@@ -393,8 +351,8 @@ form {
 #message:hover,
 #message:focus{
     outline: none;
-    border-color: var(--laranja-claro);
-    box-shadow: 0 0 0 3px var(--laranja-escuro);
+    border-color: var(--marian-blue);
+    box-shadow: 0 0 0 3px var(--ultra-violet);
 }
  
 /*FOOTER*/
