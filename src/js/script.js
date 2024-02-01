@@ -1,3 +1,4 @@
+//PARA ESCREVER O NOME
 
 document.getElementById("h1-home").style.display = "none";
 function escreverTexto(elemento, texto, intervalo) {
@@ -15,6 +16,7 @@ const textoParaEscrever = 'LUCAS FERNANDES';
 const intervaloDeEscrita = 150;
 escreverTexto(elementoTexto, textoParaEscrever, intervaloDeEscrita);
 
+//PARA ROLAR A TELA MAIS SUAVE
 
 document.addEventListener('DOMContentLoaded', function () {
   var scrollLinks = document.querySelectorAll('.smooth');
@@ -33,39 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const slides = document.querySelectorAll('.slide');
-  const radioButtons = document.querySelectorAll('input[type="radio"]');
-
-  let currentIndex = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide) => {
-      slide.style.display = 'none';
-    });
-
-    slides[index].style.display = 'block';
-    slides[index].classList.add('fade'); 
-  }
-
-  function updateSlide() {
-    radioButtons.forEach((radio, index) => {
-      if (radio.checked) {
-        currentIndex = index;
-        slides.forEach((slide) => {
-          slide.classList.remove('fade'); 
-        });
-        showSlide(currentIndex);
-      }
-    });
-  }
-
-  radioButtons.forEach((radio) => {
-    radio.addEventListener('change', updateSlide);
-  });
-
-  showSlide(currentIndex);
-});
+//PARA COPIAR O EMAIL
 
 document.addEventListener('DOMContentLoaded', function() {
   var copyButton = document.getElementById('copyButton');
@@ -106,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//MENU HAMBURGUER
+
 document.addEventListener('DOMContentLoaded', function() {
   var hamburgerIcon = document.querySelector('.hamburger-menu');
   var headerItems = document.querySelector('.header-items');
@@ -122,4 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//PARA OS EFEITOS
 AOS.init();
+
+//PARA OS MODALS
+
+function detailProject(element){
+  element.style.filter = 'brightness(0.8)';
+}
+
+function resetProject(element){
+  element.style.filter = 'brightness(1.0)';
+}
+
+function openDetailsModal(){
+  const modal = document.getElementById('detailsModal');
+  modal.style.display = 'block'
+}
+
+//CONTINUAR

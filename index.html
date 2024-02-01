@@ -100,8 +100,27 @@
             </div>
         </div>
     </section>
-    <section class="projetos" id="projects">
-            
+    <section id="projects">
+            <div class="project-item" onmouseenter="detailProject()" onmouseout="resetProject()">
+                <img src="src/img/mocukp/MacBook-Barbearia.png" alt="Site no notebook">
+                <p>Projeto Barbearia</p>
+                <button onclick="openDetailsModal()">Detalhes</button>
+            </div>
+            <!-- Modal de Detalhes -->
+            <div id="detailsModal" class="modal" onclick="closeDetailsModal()">
+                <div class="modal-content">
+                    <!-- Div da esquerda com mini galeria -->
+                    <div class="gallery-container">
+                        <img class="main-image" id="mainImage" src="" alt="Imagem Principal">
+                        <div class="thumbnail" id="thumbnailsContainer"></div>
+                    </div>
+                     <!-- Div da direita com detalhes do produto -->
+                     <div class="project-details">
+                        <h2>Detalhes do Projeto</h2>
+                        <p>Descrição do prjeto e informações adicionais...</p>
+                     </div>
+                </div>
+            </div>
     </section>
     <section id="contact">
         <div class="contact-content">
