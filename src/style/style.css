@@ -307,6 +307,7 @@ section#about {
 .modal-content{
     display: flex;
     max-width: 1000px;
+    height: 500px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
