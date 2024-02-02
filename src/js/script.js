@@ -99,17 +99,52 @@ AOS.init();
 
 //PARA OS MODALS
 
-function detailProject(element){
-  element.style.filter = 'brightness(0.8)';
+function openDetailsModal(projectId) {
+  const modalId = `myModal${projectId}`;
+  const modalElement = document.getElementById(modalId);
+
+  if (modalElement) {
+    openModal(modalId);
+
+    const thumbnailsContainer = modalElement.querySelector('.thumbnail');
+    const mainImage = modalElement.querySelector('.main-image');
+
+    const imageCount = 3;
+    createThumbnails(thumbnailsContainer, imageCount, projectId, modalId, mainImage);
+  }
 }
 
-function resetProject(element){
-  element.style.filter = 'brightness(1.0)';
+function openModal(modalId) {
+  const modalElement = document.getElementById(modalId);
+  if (modalElement) {
+    modalElement.style.display = 'block';
+  }
 }
 
-function openDetailsModal(){
-  const modal = document.getElementById('detailsModal');
-  modal.style.display = 'block'
+function closeDetailsModal(event, modalId) {
+  const modalElement = document.getElementById(modalId);
+  const isInsideContent = modalElement.querySelector('.modal-content').contains(event.target);
+
+  if (!isInsideContent) {
+    modalElement.style.display = 'none';
+  }
+}
+
+function createThumbnails(thumbnailsContainer, imageCount, projectId, modalId, mainImage) {
+  thumbnailsContainer.innerHTML = '';
+
+  for (let i = 1; i <= imageCount; i++) {
+    const thumbnail = document.createElement('img');
+    thumbnail.src = `src/img/mockup/miniatura_${projectId}_${i}.png`;
+    thumbnail.alt = `Miniatura ${i}`;
+    thumbnail.classList.add('thumbnail');
+
+    thumbnail.onclick = function () {
+      mainImage.src = `src/img/mockup/miniatura_${projectId}_${i}.png`;
+    };
+
+    thumbnailsContainer.appendChild(thumbnail);
+  }
 }
 
 //CONTINUAR

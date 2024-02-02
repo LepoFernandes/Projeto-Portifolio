@@ -306,7 +306,7 @@ section#about {
 
 .modal-content{
     display: flex;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
@@ -318,11 +318,11 @@ section#about {
 }
 
 .main-image{
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
-.thumbnails img{
+.thumbnail img{
     width: 50px;
     height: auto;
     margin: 5px;

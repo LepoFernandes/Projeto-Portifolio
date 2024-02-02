@@ -101,17 +101,17 @@
         </div>
     </section>
     <section id="projects">
-            <div class="project-item" onmouseenter="detailProject()" onmouseout="resetProject()">
-                <img src="src/img/mocukp/MacBook-Barbearia.png" alt="Site no notebook">
+            <div  class="project-item">
+                <img src="src/img/mockup/imagem_1_1.png" alt="Site no notebook">
                 <p>Projeto Barbearia</p>
-                <button onclick="openDetailsModal()">Detalhes</button>
+                <button onclick="openDetailsModal(1)">Detalhes</button>
             </div>
             <!-- Modal de Detalhes -->
-            <div id="detailsModal" class="modal" onclick="closeDetailsModal()">
+            <div id="myModal1" class="modal" onclick="closeDetailsModal(event, 'myModal1')">
                 <div class="modal-content">
                     <!-- Div da esquerda com mini galeria -->
                     <div class="gallery-container">
-                        <img class="main-image" id="mainImage" src="" alt="Imagem Principal">
+                        <img class="main-image" id="mainImage1" src="src/img/mockup/imagem_1_1.png" alt="Imagem Principal">
                         <div class="thumbnail" id="thumbnailsContainer"></div>
                     </div>
                      <!-- Div da direita com detalhes do produto -->
@@ -165,7 +165,7 @@
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
 
     <script src="src/js/script.js"></script>
-
+    
     
 </body>
 </html>
