@@ -321,7 +321,10 @@ section#about {
 .main-image{
     max-width: 300px;
     height: auto;
-    margin-bottom: 70px;
+}
+
+.thumbnail{
+    margin-top: 70px;
 }
 
 .thumbnail img{
