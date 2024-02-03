@@ -319,8 +319,9 @@ section#about {
 }
 
 .main-image{
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
+    margin-bottom: 70px;
 }
 
 .thumbnail img{

@@ -147,4 +147,30 @@ function createThumbnails(thumbnailsContainer, imageCount, projectId, modalId, m
   }
 }
 
-//CONTINUAR
+//PARA DAR ZOOM 
+
+
+// Obtém todas as instâncias de elementos com as classes 'box' e 'main-image'
+const boxes = document.querySelectorAll('.box');
+const images = document.querySelectorAll('.main-image');
+
+// Adiciona os eventos a cada par correspondente
+boxes.forEach((box, index) => {
+  const img = images[index];
+
+  box.addEventListener("mousemove", (e) => {
+    const x = e.clientX - box.getBoundingClientRect().left;
+    const y = e.clientY - box.getBoundingClientRect().top;
+
+    // Ajuste a escala conforme necessário
+    const scaleValue = 1.5;
+
+    img.style.transformOrigin = `${x}px ${y}px`;
+    img.style.transform = `scale(${scaleValue})`;
+  });
+
+  box.addEventListener("mouseleave", () => {
+    img.style.transformOrigin = "center center";
+    img.style.transform = "scale(1)";
+  });
+});
