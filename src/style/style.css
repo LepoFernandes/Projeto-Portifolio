@@ -172,7 +172,7 @@ a:hover {
 
 section#about {
     width: 100vw;
-    background-color: var(--battleship-gray);
+    background-color: rgba(0, 0, 0, 0.89);
     border-radius: 20px;
     height: 100vh;
 }
