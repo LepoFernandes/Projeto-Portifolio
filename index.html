@@ -101,6 +101,7 @@
         </div>
     </section>
     <section id="projects">
+        <!--PROJETO BARBEARIA-->
             <div  class="project-item">
                 <img src="src/img/mockup/imagem_1_1.png" alt="Site no notebook">
                 <p>Projeto Barbearia</p>
@@ -116,8 +117,29 @@
                     </div>
                      <!-- Div da direita com detalhes do produto -->
                      <div class="project-details">
-                        <h2>Detalhes do Projeto</h2>
-                        <p>Descrição do prjeto e informações adicionais...</p>
+                        <h2>Projeto Barbearia</h2>
+                        <p>Descrição do projeto e informações adicionais...</p>
+                     </div>
+                </div>
+            </div>
+            <!--PROJETO BAR-->
+            <div  class="project-item">
+                <img src="src/img/mockup/imagem_2_2.png" alt="Site no notebook">
+                <p>Projeto Bar</p>
+                <button onclick="openDetailsModal(2)">Detalhes</button>
+            </div>
+            <!-- Modal de Detalhes -->
+            <div id="myModal2" class="modal" onclick="closeDetailsModal(event, 'myModal2')">
+                <div class="modal-content">
+                    <!-- Div da esquerda com mini galeria -->
+                    <div class="gallery-container">
+                        <img class="main-image" id="mainImage1" src="src/img/mockup/imagem_2_2.png" alt="Imagem Principal">
+                        <div class="thumbnail" id="thumbnailsContainer"></div>
+                    </div>
+                     <!-- Div da direita com detalhes do produto -->
+                     <div class="project-details">
+                        <h2>Projeto Bar</h2>
+                        <p>Descrição do projeto e informações adicionais...</p>
                      </div>
                 </div>
             </div>
