@@ -150,7 +150,6 @@ function createThumbnails(thumbnailsContainer, imageCount, projectId, modalId, m
 //PARA DAR ZOOM 
 
 
-
 const boxes = document.querySelectorAll('.box');
 const images = document.querySelectorAll('.main-image');
 
@@ -162,7 +161,6 @@ boxes.forEach((box, index) => {
     const x = e.clientX - box.getBoundingClientRect().left;
     const y = e.clientY - box.getBoundingClientRect().top;
 
-    // Ajuste a escala conforme necessário
     const scaleValue = 1.7;
 
     img.style.transformOrigin = `${x}px ${y}px`;
@@ -174,3 +172,5 @@ boxes.forEach((box, index) => {
     img.style.transform = "scale(1)";
   });
 });
+
+

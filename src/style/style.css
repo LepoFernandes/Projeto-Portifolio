@@ -327,10 +327,14 @@ section#about {
     margin-top: 70px;
 }
 
+#thumbnailsContainer{
+    border: 1px solid var(--jet);
+}
+
 .thumbnail img{
     width: 50px;
     height: auto;
-    margin: 5px;
+    margin: 20px;
     cursor: pointer;
 }
 
@@ -342,6 +346,8 @@ section#about {
 .project-details h2{
     margin-bottom: 10px;
 }
+
+
 
 /*CONTACT*/
 section#contact{
