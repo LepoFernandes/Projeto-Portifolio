@@ -260,11 +260,16 @@ section#about {
 #projects{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
   
 .project-item{
     position: relative;
     width: 200px;
+    height: 300px;
     margin: 10px;
 }
 
@@ -280,7 +285,7 @@ section#about {
 .project-item button{
     display: none;
     position: absolute;
-    bottom: 100px;
+    bottom: 215px;
     left: 50%;
     transform: translateX(-50%);
 }
