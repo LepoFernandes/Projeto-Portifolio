@@ -172,5 +172,3 @@ boxes.forEach((box, index) => {
     img.style.transform = "scale(1)";
   });
 });
-
-
