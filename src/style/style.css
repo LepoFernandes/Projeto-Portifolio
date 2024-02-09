@@ -446,8 +446,8 @@ form {
 /*FOOTER*/
 
 footer {
-    background-color: var(--laranja-escuro);
-    color: var(--azul-escuro-escuro);
+    background-color: var(--marian-blue);
+    color: var(--white-smoke);
     padding: 20px 0;
     text-align: center;
     width: 100vw;
@@ -506,14 +506,14 @@ footer a {
     width: 10px; 
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--laranja-claro); 
+    background-color: var(--battleship-gray); 
     border-radius: 5px; 
 }
 ::-webkit-scrollbar-thumb:active{
-    background-color: var(--laranja-escuro);
+    background-color: var(--marian-blue);
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--azul-escuro-claro); 
+    background-color: var(--ultra-violet); 
 }
 
 @media screen and (max-width: 768px){
