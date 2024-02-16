@@ -101,18 +101,15 @@ a {
     color: var(--jet);
     text-decoration: none;
     margin: 0 15px;
-    transition: color 0.3s ease;
-    
+    transition: color 0.3s ease;   
 } 
 a:hover {
     color: var(--ultra-violet); 
 } 
-
 .header-items {
     display: flex;
     gap: 5px;   
 }
-
 .header-items a {
     position: relative;
     padding-top: 5px;
@@ -120,7 +117,6 @@ a:hover {
     width: 100px;
     padding-bottom: 8px;  
 }
-
 .header-items a::before {
     content: '';
     position: absolute;
@@ -131,7 +127,6 @@ a:hover {
     background-color: #333; 
     transition: width 0.5s ease; 
 }
-
 .header-items a:hover::before {
     width: 100%;
 }
@@ -141,7 +136,20 @@ a:hover {
 .home{
     height: 100vh;
 }
-
+.home-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.home-icons a{
+    margin: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+.home-icons a:hover{
+    transform: translateX(-15px);
+}
 .hero{
     width: 100vw;
     height: 50%;
@@ -150,14 +158,12 @@ a:hover {
     justify-content: center;
     margin: 25px;
 }
-
 .hero-content p{
     color: var(--jet);
 }
 .button-home {
     text-align: center;
 }
-
 #texto-escrevendo {
     white-space: nowrap;
     overflow: hidden;
@@ -166,6 +172,22 @@ a:hover {
     font-weight: bolder;
     font-family: 'Cookie Supply DEMO';
     color: var(--marian-blue); 
+}
+
+.btn-home {
+    background-color: var(--jet);
+    color: var(--white-smoke);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+.btn-home:hover {
+    background-color: var(--marian-blue);
+    cursor: pointer;
+    box-shadow: 0 0 12px 1px var(--ultra-violet), 0 0 12px 1px var(--marian-blue);
 }
 
 /*ABOUT*/
