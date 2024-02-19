@@ -115,132 +115,172 @@
         </div>
     </section>
     <section id="projects">
-        <!--PROJETO BARBEARIA-->
-            <div  class="project-item">
-                <img src="src/img/mockup/imagem_1_1.png" alt="Site no notebook">
-                <p>Projeto Barbearia</p>
-                <button onclick="openDetailsModal(1)">Detalhes</button>
-            </div>
-            <!-- Modal de Detalhes -->
-            <div id="myModal1" class="modal" onclick="closeDetailsModal(event, 'myModal1')">
-                <div class="modal-content">
-                    <!-- Div da esquerda com mini galeria -->
-                    <div class="gallery-container">
-                        <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_1_1.png" alt="Imagem Principal"></div>
-                        <div class="thumbnail" id="thumbnailsContainer"></div>
-                    </div>
-                     <!-- Div da direita com detalhes do produto -->
-                     <div class="project-details">
-                        <h2>Projeto Barbearia</h2>
-                        <p>Descrição do projeto e informações adicionais...</p>
-                     </div>
+        <div class="titulo-project">
+            <h1>Projetos</h1>
+        </div>
+        <div class="projects-div">
+            <!--PROJETO BARBEARIA-->
+                <div  class="project-item">
+                    <img src="src/img/mockup/imagem_1_1.png" alt="Site no notebook">
+                    <p>Projeto Barbearia</p>
+                    <button class="button-project" onclick="openDetailsModal(1)">Detalhes</button>
                 </div>
-            </div>
-            <!--PROJETO BAR-->
-            <div  class="project-item">
-                <img src="src/img/mockup/imagem_2_2.png" alt="Site no notebook">
-                <p>Projeto Bar</p>
-                <button onclick="openDetailsModal(2)">Detalhes</button>
-            </div>
-            <!-- Modal de Detalhes -->
-            <div id="myModal2" class="modal" onclick="closeDetailsModal(event, 'myModal2')">
-                <div class="modal-content">
-                    <!-- Div da esquerda com mini galeria -->
-                    <div class="gallery-container">
-                        <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_2_2.png" alt="Imagem Principal"></div>
-                        <div class="thumbnail" id="thumbnailsContainer"></div>
+                <!-- Modal de Detalhes -->
+                <div id="myModal1" class="modal" onclick="closeDetailsModal(event, 'myModal1')">
+                    <div class="modal-content">
+                        <!-- Div da esquerda com mini galeria -->
+                        <div class="gallery-container">
+                            <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_1_1.png" alt="Imagem Principal"></div>
+                            <div class="thumbnail" id="thumbnailsContainer"></div>
+                        </div>
+                         <!-- Div da direita com detalhes do produto -->
+                         <div class="project-details">
+                            <h2>Projeto Barbearia</h2>
+                            <p>Desenvolvi o site da barbearia utilizando HTML e SASS, com foco em proporcionar uma experiência moderna e intuitiva para os clientes. O site apresenta informações sobre os serviços oferecidos, a equipe de profissionais e um portfólio de cortes e barbas.</p>
+                            <p>Além disso, integrei um botão que direciona os clientes para o WhatsApp, facilitando o contato direto. Com um design atrativo e funcionalidades relevantes, o site visa aumentar a visibilidade e facilitar a interação com os clientes da barbearia.</p>
+                            <div class="links-modal">
+                                <a target="_blank" href="https://github.com/LepoFernandes/Projeto-Barbearia">Repositório</a>
+                                <a target="_blank" href="https://lepofernandes.github.io/Projeto-Barbearia/">Página</a>
+                            </div>
+                         </div>
                     </div>
-                     <!-- Div da direita com detalhes do produto -->
-                     <div class="project-details">
-                        <h2>Projeto Bar</h2>
-                        <p>Descrição do projeto e informações adicionais...</p>
-                     </div>
                 </div>
-            </div>
-            <!--PROJETO TELA DE LOGIN1-->
-            <div  class="project-item">
-                <img src="src/img/mockup/imagem_3_3.png" alt="Site no notebook">
-                <p>Projeto Tela de Login</p>
-                <button onclick="openDetailsModal(3)">Detalhes</button>
-            </div>
-            <!-- Modal de Detalhes -->
-            <div id="myModal3" class="modal" onclick="closeDetailsModal(event, 'myModal3')">
-                <div class="modal-content">
-                    <!-- Div da esquerda com mini galeria -->
-                    <div class="gallery-container">
-                        <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_3_3.png" alt="Imagem Principal"></div>
-                        <div class="thumbnail" id="thumbnailsContainer"></div>
+                <!--PROJETO BAR-->
+                <div  class="project-item">
+                    <img src="src/img/mockup/imagem_2_2.png" alt="Site no notebook">
+                    <p>Projeto Bar</p>
+                    <button class="button-project" onclick="openDetailsModal(2)">Detalhes</button>
+                </div>
+                <!-- Modal de Detalhes -->
+                <div id="myModal2" class="modal" onclick="closeDetailsModal(event, 'myModal2')">
+                    <div class="modal-content">
+                        <!-- Div da esquerda com mini galeria -->
+                        <div class="gallery-container">
+                            <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_2_2.png" alt="Imagem Principal"></div>
+                            <div class="thumbnail" id="thumbnailsContainer"></div>
+                        </div>
+                         <!-- Div da direita com detalhes do produto -->
+                         <div class="project-details">
+                            <h2>Projeto Bar</h2>
+                            <p> Desenvolvi o site do bar utilizando HTML e CSS para fornecer uma presença online simples e informativa. O site apresenta um catálogo de itens destacando produtos disponíveis no bar e no mercado adjacente.</p>
+                            <p> Os itens incluem bebidas e produtos. Embora não haja funcionalidade de venda online, os clientes podem explorar os itens disponíveis para ter uma ideia do que podem encontrar ao visitar o estabelecimento.</p>
+                            <div class="links-modal">
+                                <a target="_blank" href="https://github.com/LepoFernandes/Projeto-Bar">Repositório</a>
+                                <a target="_blank" href="https://bar-sedenir.vercel.app">Página</a>
+                            </div>
+                         </div>
                     </div>
-                     <!-- Div da direita com detalhes do produto -->
-                     <div class="project-details">
-                        <h2>Projeto Tela de Login</h2>
-                        <p>Descrição do projeto e informações adicionais...</p>
-                     </div>
                 </div>
-            </div>
-            <!--PROJETO LANDING PAGE-->
-            <div  class="project-item">
-                <img src="src/img/mockup/imagem_4_4.png" alt="Site no notebook">
-                <p>Projeto Lading Page</p>
-                <button onclick="openDetailsModal(4)">Detalhes</button>
-            </div>
-            <!-- Modal de Detalhes -->
-            <div id="myModal4" class="modal" onclick="closeDetailsModal(event, 'myModal4')">
-                <div class="modal-content">
-                    <!-- Div da esquerda com mini galeria -->
-                    <div class="gallery-container">
-                        <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_4_4.png" alt="Imagem Principal"></div>
-                        <div class="thumbnail" id="thumbnailsContainer"></div>
+                <!--PROJETO TELA DE LOGIN1-->
+                <div  class="project-item">
+                    <img src="src/img/mockup/imagem_3_3.png" alt="Site no notebook">
+                    <p>Projeto Tela de Login</p>
+                    <button class="button-project" onclick="openDetailsModal(3)">Detalhes</button>
+                </div>
+                <!-- Modal de Detalhes -->
+                <div id="myModal3" class="modal" onclick="closeDetailsModal(event, 'myModal3')">
+                    <div class="modal-content">
+                        <!-- Div da esquerda com mini galeria -->
+                        <div class="gallery-container">
+                            <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_3_3.png" alt="Imagem Principal"></div>
+                            <div class="thumbnail" id="thumbnailsContainer"></div>
+                        </div>
+                         <!-- Div da direita com detalhes do produto -->
+                         <div class="project-details">
+                            <h2>Projeto Tela de Login</h2>
+                            <p>Desenvolvi uma tela de login que se adapta dinamicamente ao dispositivo do usuário, garantindo uma experiência consistente em desktops, tablets e smartphones.</p>
+                            <p>Com layouts otimizados para cada tela, os usuários desfrutam de uma entrada fácil e intuitiva, independentemente do dispositivo que estão usando. O objetivo é proporcionar uma experiência de usuário perfeita, mantendo a funcionalidade e a estética em qualquer contexto de uso.</p>
+                            <div class="links-modal">
+                                <a target="_blank" href="https://github.com/LepoFernandes/Projeto-Login">Repositório</a>
+                                <a target="_blank" href="https://lepofernandes.github.io/Projeto-Login/">Página</a>
+                            </div>
+                         </div>
                     </div>
-                     <!-- Div da direita com detalhes do produto -->
-                     <div class="project-details">
-                        <h2>Projeto Landing Page</h2>
-                        <p>Descrição do projeto e informações adicionais...</p>
-                     </div>
                 </div>
-            </div>
-            <!--PROJETO TELA DE LOGIN INTERATIVA-->
-            <div  class="project-item">
-                <img src="src/img/mockup/imagem_5_5.png" alt="Site no notebook">
-                <p>Projeto Tela de Login Interativa</p>
-                <button onclick="openDetailsModal(5)">Detalhes</button>
-            </div>
-            <!-- Modal de Detalhes -->
-            <div id="myModal5" class="modal" onclick="closeDetailsModal(event, 'myModal5')">
-                <div class="modal-content">
-                    <!-- Div da esquerda com mini galeria -->
-                    <div class="gallery-container">
-                        <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_5_5.png" alt="Imagem Principal"></div>
-                        <div class="thumbnail" id="thumbnailsContainer"></div>
+                <!--PROJETO LANDING PAGE-->
+                <div  class="project-item">
+                    <img src="src/img/mockup/imagem_4_4.png" alt="Site no notebook">
+                    <p>Projeto Lading Page</p>
+                    <button class="button-project" onclick="openDetailsModal(4)">Detalhes</button>
+                </div>
+                <!-- Modal de Detalhes -->
+                <div id="myModal4" class="modal" onclick="closeDetailsModal(event, 'myModal4')">
+                    <div class="modal-content">
+                        <!-- Div da esquerda com mini galeria -->
+                        <div class="gallery-container">
+                            <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_4_4.png" alt="Imagem Principal"></div>
+                            <div class="thumbnail" id="thumbnailsContainer"></div>
+                        </div>
+                         <!-- Div da direita com detalhes do produto -->
+                         <div class="project-details">
+                            <h2>Projeto Landing Page</h2>
+                            <p>Criei uma landing page minimalista para destacar as irresistíveis pipocas gourmet. A página contém apenas um link para as redes sociais da pessoa responsável pela produção das pipocas, onde os interessados podem encontrar mais informações e fazer pedidos.</p>
+                            <p>O design simples e direto visa despertar a curiosidade dos visitantes e incentivá-los a explorar mais sobre os produtos nas redes sociais.</p>
+                            <div class="links-modal">
+                                <a target="_blank" href="https://github.com/LepoFernandes/landing-page">Repositório</a>
+                                <a target="_blank" href="https://lepofernandes.github.io/landing-page/">Página</a>
+                            </div>
+                         </div>
                     </div>
-                     <!-- Div da direita com detalhes do produto -->
-                     <div class="project-details">
-                        <h2>Projeto Tela de Login Interativa</h2>
-                        <p>Descrição do projeto e informações adicionais...</p>
-                     </div>
                 </div>
-            </div>
-               <!--PROJETO ORGANIZADOR DE TAREFAS-->
-               <div  class="project-item">
-                <img src="src/img/mockup/imagem_6_6.png" alt="Site no notebook">
-                <p>Projeto Organizador de Tarefas</p>
-                <button onclick="openDetailsModal(6)">Detalhes</button>
-            </div>
-            <!-- Modal de Detalhes -->
-            <div id="myModal6" class="modal" onclick="closeDetailsModal(event, 'myModal6')">
-                <div class="modal-content">
-                    <!-- Div da esquerda com mini galeria -->
-                    <div class="gallery-container">
-                        <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_6_6.png" alt="Imagem Principal"></div>
-                        <div class="thumbnail" id="thumbnailsContainer"></div>
+                <!--PROJETO TELA DE LOGIN INTERATIVA-->
+                <div  class="project-item">
+                    <img src="src/img/mockup/imagem_5_5.png" alt="Site no notebook">
+                    <p>Projeto Tela de Login Interativa</p>
+                    <button class="button-project" onclick="openDetailsModal(5)">Detalhes</button>
+                </div>
+                <!-- Modal de Detalhes -->
+                <div id="myModal5" class="modal" onclick="closeDetailsModal(event, 'myModal5')">
+                    <div class="modal-content">
+                        <!-- Div da esquerda com mini galeria -->
+                        <div class="gallery-container">
+                            <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_5_5.png" alt="Imagem Principal"></div>
+                            <div class="thumbnail" id="thumbnailsContainer"></div>
+                        </div>
+                         <!-- Div da direita com detalhes do produto -->
+                         <div class="project-details">
+                            <h2>Projeto Tela de Login Interativa</h2>
+                            <p>Criei uma página de login usando HTML, CSS e JavaScript, com animações que mudam a tela dependendo se o usuário deseja se cadastrar ou fazer login.</p>
+                            <p>As transições são suaves e responsivas, proporcionando uma experiência interativa e atraente aos usuários.</p>
+                            <div class="links-modal">
+                                <a target="_blank" href="https://github.com/LepoFernandes/Projeto-Login-Interativo">Repositório</a>
+                                <a target="_blank" href="https://lepofernandes.github.io/Projeto-Login-Interativo/">Página</a>
+                            </div>
+                         </div>
                     </div>
-                     <!-- Div da direita com detalhes do produto -->
-                     <div class="project-details">
-                        <h2>Projeto Organizador de Tarefas</h2>
-                        <p>Descrição do projeto e informações adicionais...</p>
-                     </div>
                 </div>
-            </div>
+                   <!--PROJETO ORGANIZADOR DE TAREFAS-->
+                   <div  class="project-item">
+                    <img src="src/img/mockup/imagem_6_6.png" alt="Site no notebook">
+                    <p>Projeto Organizador de Tarefas</p>
+                    <button class="button-project" onclick="openDetailsModal(6)">Detalhes</button>
+                </div>
+                <!-- Modal de Detalhes -->
+                <div id="myModal6" class="modal" onclick="closeDetailsModal(event, 'myModal6')">
+                    <div class="modal-content">
+                        <!-- Div da esquerda com mini galeria -->
+                        <div class="gallery-container">
+                            <div class="box"><img class="main-image" id="mainImage1" src="src/img/mockup/imagem_6_6.png" alt="Imagem Principal"></div>
+                            <div class="thumbnail" id="thumbnailsContainer"></div>
+                        </div>
+                         <!-- Div da direita com detalhes do produto -->
+                         <div class="project-details">
+                            <h2>Projeto Organizador de Tarefas</h2>
+                            <p>Criei um organizador de tarefas web utilizando HTML, CSS e JavaScript. A interface é intuitiva, permitindo aos usuários adicionar, editar e excluir tarefas facilmente. As funcionalidades incluem marcação de tarefas como concluídas.</p>
+                            <p>O design é responsivo, adaptando-se a diferentes dispositivos para uma experiência consistente. O objetivo é oferecer aos usuários uma ferramenta eficiente para gerenciar suas tarefas diárias.</p>
+                            <div class="links-modal">
+                                <a target="_blank" href="https://github.com/LepoFernandes/Projeto-Organizador">Repositório</a>
+                                <a target="_blank" href="https://lepofernandes.github.io/Projeto-Organizador/">Página</a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <!--PROJETO EM CONSTRUCAO-->
+                <div  class="project-item">
+                    <img src="src/img/pagina_em.png" alt="Site sendo feito">
+                    <p>Projeto Fotógrafo</p>
+                </div>
+        </div>
     </section>
     <section id="contact">
         <div class="contact-content">
