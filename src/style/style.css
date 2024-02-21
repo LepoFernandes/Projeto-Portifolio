@@ -432,7 +432,10 @@ section#about {
 
 /*CONTACT*/
 section#contact{
-    background-color: var(--battleship-gray);
+    background-color: rgba(0, 0, 0, 0.89);
+    border-radius: 20px 20px 0 0;
+    width: 100vw;
+    height: 100vw;
 }
 section#contact h1{
     font-size: 54px;
@@ -485,7 +488,8 @@ form {
     max-width: 500px;
     margin: auto;
     background-color: var(--jet);
-    padding: 20px;    
+    padding: 20px;  
+    color: var(--white-smoke);  
 }
 .form-label {
     display: block; 
@@ -537,7 +541,7 @@ footer li {
     margin-right: 10px;
 }
 footer a {
-    color: var(--azul-escuro-escuro);
+    color: var(--white-smoke);
     text-decoration: none;
 }
 .btn-whatsapp {
@@ -560,7 +564,7 @@ footer a {
     top: 8px;
     left: -144px;
     background-color: #232224;
-    color: var(--laranja-escuro);
+    color: var(--white-smoke);
     padding: 6px;
     border-radius: 8px;
     text-align: center;
