@@ -649,7 +649,7 @@ footer a {
 
     section#about{
         width: 100vw;
-        min-height: 100vh;
+        height: 900px;
     }
     .about-me{
         flex-direction: column;
@@ -657,7 +657,7 @@ footer a {
     }
     .about-text{
         width: 90vw;
-        height: 400px;
+        height: 300px;
     }
     .skills-grid{
         gap: 10px;
@@ -682,50 +682,43 @@ footer a {
 
     /*PROJETOS*/
 
-    .slide img {
-        max-width: 100%;
-        height: auto;
+    .modal-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        height: 600px;
     }
-    .slide-content{
-        top: 0;
-        width: 100%;
-        left: 0;
-        position: relative;
-        padding: 0;
-    }
-    .descricao{
-        font-size: 16px;
-    }
-    .projetos{
-        height: 100vh;
-    }
-    .slideshow-container{
-        height: 80%;
+    .project-details p{
+        display: none;
     }
 
     /*CONTATO*/
 
-    section#contact{
-        width: 90vw;
+    #contact{
+        width: 100vw;
+        min-height: 1000px;
     }
 
-    .form-copy{
+    .contact-content {
+        text-align: center;
+    }
+      
+    .form-copy {
+        display: flex;
         flex-direction: column;
-        position: absolute;
+        align-items: center;
     }
+    
     .click-copy{
-        width: 50%;
-        height: 30vh;
-        position: relative;
+        width: 100%;
+        height: 50%;
+        margin: 25px;
+    } 
+    
+    .contact-form {
+        width: 100%;
+        height: 50%;
     }
-    .contact-form{
-        position: relative;
-        margin-bottom: 0;
-    }
-
-    /*FOOTER*/
-
-    .footer{
-        margin-top: 300px;
-    }
+    
 }
