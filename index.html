@@ -72,8 +72,9 @@
         <div class="about-me">
             <div  class="about-text" data-aos="fade-up" data-aos-deLay="150">
                 <h2 id="about-text">Sobre mim</h2>
-                <p>Olá, eu sou Lucas. Tenho 24 anos, minha carreira começou no setor de varejo, onde ao longo dos anos, desenvolvi habilidades robustas em gestão, tomada de decisões e resolução de problemas enquanto atuava como empreendedor em um mercado e bar.</p>
-                <p>Atualmente estou cursando Engenharia de Software pela Estácio e muito ansioso para explorar novos horizontes na área, aplicando minha paixão por aprender e meu histórico empreendedor ao mundo tecnológico.</p>
+                <p>Olá, eu sou Lucas. Tenho 26 anos e minha carreira começou no setor de varejo, onde desenvolvi habilidades em gestão, tomada de decisões e resolução de problemas enquanto atuava como empreendedor em um mercado e bar.</p>
+                <p>Atualmente estou cursando Engenharia de Software pela Estácio e estudando para me tornar um profissional completo de back-end em C#. Tenho paixão por aprender, me reinventar e aplicar minha experiência prática em projetos de software, incluindo jogos no console e sistemas web de gerenciamento.</p>
+                <p>Estou sempre aberto a trocar ideias, aprender e criar soluções inovadoras.</p>
             </div>
             <div class="cards">
                 <h1>Principais habilidades</h1>
@@ -111,6 +112,39 @@
                     </div>
                 </div>
             </div>
+        <div class="skill-card" data-skill="C#" data-aos="fade-up">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fab fa-cuttlefish"></i> 
+                    <h3>C#</h3>
+                </div>
+                <div class="card-back">
+                    <p>Projetos: jogos no console e sistemas web de gerenciamento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="skill-card" data-skill="ASP.NET MVC" data-aos="fade-down">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fab fa-microsoft"></i> 
+                    <h3>ASP.NET MVC</h3>
+                </div>
+                <div class="card-back">
+                    <p>Sistemas web completos de gerenciamento com banco de dados.</p>
+                </div>
+            </div>
+        </div>
+        <div class="skill-card" data-skill="SQL" data-aos="fade-left">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+                <div class="card-back">
+                    <p>Consultas, manipulação de dados e banco relacional em projetos práticos.</p>
+                </div>
+            </div>
+        </div>
             </div>
         </div>
     </section>
@@ -145,7 +179,7 @@
                          </div>
                     </div>
                 </div>
-                <!--PROJETO BAR-->
+            <!--PROJETO BAR-->
                 <div  class="project-item">
                     <img src="src/img/mockup/imagem_2_2.png" alt="Site no notebook">
                     <p>Projeto Bar</p>
@@ -171,7 +205,7 @@
                          </div>
                     </div>
                 </div>
-                <!--PROJETO TELA DE LOGIN1-->
+            <!--PROJETO TELA DE LOGIN1-->
                 <div  class="project-item">
                     <img src="src/img/mockup/imagem_3_3.png" alt="Site no notebook">
                     <p>Projeto Tela de Login</p>
@@ -197,7 +231,7 @@
                          </div>
                     </div>
                 </div>
-                <!--PROJETO LANDING PAGE-->
+            <!--PROJETO LANDING PAGE-->
                 <div  class="project-item">
                     <img src="src/img/mockup/imagem_4_4.png" alt="Site no notebook">
                     <p>Projeto Lading Page</p>
@@ -223,7 +257,7 @@
                          </div>
                     </div>
                 </div>
-                <!--PROJETO TELA DE LOGIN INTERATIVA-->
+            <!--PROJETO TELA DE LOGIN INTERATIVA-->
                 <div  class="project-item">
                     <img src="src/img/mockup/imagem_5_5.png" alt="Site no notebook">
                     <p>Projeto Tela de Login Interativa</p>
@@ -249,8 +283,8 @@
                          </div>
                     </div>
                 </div>
-                   <!--PROJETO ORGANIZADOR DE TAREFAS-->
-                   <div  class="project-item">
+            <!--PROJETO ORGANIZADOR DE TAREFAS-->
+                <div class="project-item">
                     <img src="src/img/mockup/imagem_6_6.png" alt="Site no notebook">
                     <p>Projeto Organizador de Tarefas</p>
                     <button class="button-project" onclick="openDetailsModal(6)">Detalhes</button>
@@ -276,11 +310,27 @@
                          </div>
                     </div>
                 </div>
-                <!--PROJETO EM CONSTRUCAO-->
-                <div  class="project-item">
-                    <img src="src/img/pagina_em.png" alt="Site sendo feito">
-                    <p>Projeto Fotógrafo</p>
+            <!--PROJETO EM CONSTRUÇÃO / OUTROS PROJETOS-->
+                <div class="project-item">
+                    <img src="src/img/pagina_em.png" alt="Mais projetos">
+                    <p>Outros Projetos</p>
+                    <button class="button-project" onclick="openDetailsModal(7)">Detalhes</button>
                 </div>
+                <!-- Modal de Detalhes -->
+                <div id="myModal7" class="modal" onclick="closeDetailsModal(event, 'myModal7')">
+                    <div class="modal-content">
+                    <div class="gallery-container">
+                    <div class="box">
+                        <img class="main-image" id="mainImage7" src="src/img/pagina_em.png" alt="Mais projetos">
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h2>Outros Projetos</h2>
+                    <p>Alguns projetos mais antigos ou em andamento podem ser encontrados no meu <a target="_blank" href="https://github.com/LepoFernandes">GitHub</a> e <a target="_blank" href="https://www.linkedin.com/in/lepofernandes">LinkedIn</a>.</p>
+                    <p>Essa seção será atualizada à medida que eu continuar desenvolvendo novos projetos e experiências práticas.</p>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <section id="contact">
