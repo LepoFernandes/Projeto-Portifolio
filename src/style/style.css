@@ -604,8 +604,7 @@ footer a {
 
 @media screen and (max-width: 768px){
     .body{
-        overflow: hidden;
-        width: 100vw;
+        overflow-x: hidden;
     }
     section#home {
         height: 100vh;
@@ -655,7 +654,8 @@ footer a {
 
     section#about{
         width: 100vw;
-        height: 900px;
+        min-height: 900px;
+        height: auto;
     }
     .about-me{
         flex-direction: column;
@@ -666,16 +666,19 @@ footer a {
         height: 300px;
     }
     .skills-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
         gap: 10px;
         margin-top: 10px;
         width: 90vw;
+        margin-left: 70px;
     }
     .skills-grid p{
         font-size: 15px;
     }
     .skill-card{
         padding: 0;
-        height: 250px;
+        height: auto;
     }
     .cards{
         height: 500px;
@@ -687,6 +690,15 @@ footer a {
     }
 
     /*PROJETOS*/
+
+    .projects-div {
+        gap: 10px; 
+    }
+    .project-item {
+        width: 90%;       
+        height: auto; 
+        margin: 15px auto; 
+    }
 
     .modal-content{
         flex-direction: column;
