@@ -21,12 +21,12 @@ O design é responsivo e moderno, permitindo uma boa experiência em desktop e m
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/LepoFernandes/Portfolio.git
+   git clone https://github.com/LepoFernandes/Projeto-Portifolio.git
    ```
 2. Acesse a pasta do projeto:
 
    ```bash
-   cd Portfolio
+   cd Projeto-Portifolio
    ```
 3. Abra o arquivo `index.html` no navegador.
 
