@@ -8,7 +8,7 @@ O design é responsivo e moderno, permitindo uma boa experiência em desktop e m
 ## 🌐 Demonstração
 
 👉 [Acesse a página online (Vercel)](https://portifolio-lucasf.vercel.app)
-👉 [Repositório no GitHub](https://github.com/LepoFernandes/Portfolio)
+👉 [Repositório no GitHub](https://github.com/LepoFernandes/Projeto-Portifolio)
 
 ## 🛠 Tecnologias
 
